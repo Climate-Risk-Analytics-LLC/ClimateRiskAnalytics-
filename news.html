@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest news and updates from Climate Risk Analytics, LLC on HOOP energy storage, deployments, grants, partnerships, and technology milestones.">
+  <title>News &amp; Updates | Climate Risk Analytics, LLC — HOOP Energy Storage</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-zinc-950 text-white antialiased">
+  <!-- NAVIGATION (same as index) -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-x-3 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center group-hover:scale-105 transition-transform">
+            <span class="text-zinc-950 font-bold text-xl tracking-tighter">CRA</span>
+          </div>
+          <div>
+            <div class="font-display text-xl font-semibold tracking-tighter uppercase group-hover:text-cyan-400 transition-colors">Climate Risk</div>
+            <div class="text-[9px] text-zinc-500 -mt-1 tracking-[2px]">ANALYTICS, LLC</div>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-x-8 text-sm font-medium">
+          <a href="index.html" class="nav-link">HOOP Energy</a>
+          <a href="news.html" class="nav-link text-[#67f6ff]">News</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-x-3">
+          <a href="index.html#contact" class="hidden md:block px-5 py-2 text-sm font-semibold rounded-2xl border border-white/20 hover:bg-white/5 transition-colors">
+            Request Briefing
+          </a>
+          <a href="index.html#contact" class="px-6 py-2.5 bg-white text-zinc-950 text-sm font-semibold rounded-2xl hover:bg-zinc-100 active:scale-[0.985] transition-all">
+            Apply for Pilot
+          </a>
+          
+          <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 flex items-center justify-center text-white/80 hover:text-white" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-zinc-950/95">
+      <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
+        <a href="index.html" class="py-1 nav-link">HOOP Energy</a>
+        <a href="news.html" class="py-1 nav-link">News</a>
+        <a href="index.html#contact" class="py-1 nav-link">Contact</a>
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <a href="index.html#contact" class="px-5 py-2.5 text-center text-sm font-semibold rounded-2xl border border-white/20">Request Briefing</a>
+          <a href="index.html#contact" class="px-5 py-2.5 text-center bg-white text-zinc-950 text-sm font-semibold rounded-2xl">Apply for Pilot</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NEWS HEADER / HERO -->
+  <header class="pt-20 pb-12 border-b border-white/10 bg-zinc-950">
+    <div class="max-w-5xl mx-auto px-6 pt-10">
+      <div class="flex items-center gap-3 mb-4">
+        <a href="index.html" class="text-sm text-emerald-400 hover:underline flex items-center gap-1.5">
+          ← Back to HOOP Homepage
+        </a>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-display font-bold tracking-tighter">News &amp; Updates</h1>
+      <p class="mt-4 max-w-2xl text-xl text-zinc-300">Technical milestones, deployments, partnerships, and company announcements from Climate Risk Analytics.</p>
+    </div>
+  </header>
+
+  <!-- NEWS ARTICLES -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="flex items-center justify-between mb-8">
+      <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold">ALL UPDATES • 2026</div>
+      <div class="text-sm text-zinc-400">6 articles shown</div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <!-- Article 1 -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-emerald-400/10 text-emerald-400 rounded-full">PRODUCT</span>
+          <span class="text-xs text-zinc-400">MAY 26, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">HOOP Now Available for Data Center Pilots</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics has opened presale slots for HOOP units specifically targeting hyperscale and edge data center operators seeking immediate tri-generation value. The shared-savings model allows operators to deploy with zero upfront capital.</p>
+        <button onclick="showArticleModal(0)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-blue-400/10 text-blue-400 rounded-full">POLICY</span>
+          <span class="text-xs text-zinc-400">MAY 20, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">U.S. Manufacturing Supports Domestic Content Rules</h3>
+        <p class="text-zinc-300 mb-6 flex-1">With over 80% U.S. sourced materials and components, HOOP units qualify strongly under current and proposed domestic content requirements for federal tax credits and defense procurement programs through 2030.</p>
+        <button onclick="showArticleModal(1)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-emerald-400/10 text-emerald-400 rounded-full">TECHNOLOGY</span>
+          <span class="text-xs text-zinc-400">MAY 15, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">67%+ Tri-Generation Efficiency Confirmed</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Independent laboratory and field testing has validated combined round-trip efficiency exceeding 67% when including power generation, cooling delivery, and high-grade heat recovery — significantly outperforming conventional lithium-based systems in multi-output scenarios.</p>
+        <button onclick="showArticleModal(2)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-purple-400/10 text-purple-400 rounded-full">GRANTS</span>
+          <span class="text-xs text-zinc-400">MAY 10, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">DOE SBIR Phase I Proposal Submitted for Advanced Isothermal Storage</h3>
+        <p class="text-zinc-300 mb-6 flex-1">CRA has submitted a DOE SBIR proposal focused on next-generation isothermal compressed air energy storage optimized for data center waste heat recovery and microgrid applications in tribal and rural communities.</p>
+        <button onclick="showArticleModal(3)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-orange-400/10 text-orange-400 rounded-full">IP</span>
+          <span class="text-xs text-zinc-400">APRIL 28, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">New Patent Filing: Turbo-Asymmetric Energy Recovery</h3>
+        <p class="text-zinc-300 mb-6 flex-1">A new provisional patent has been filed covering an innovative turbo-asymmetric expander/compressor architecture that further reduces waste heat and improves round-trip efficiency in the HOOP platform.</p>
+        <button onclick="showArticleModal(4)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-sky-400/10 text-sky-400 rounded-full">DEFENSE</span>
+          <span class="text-xs text-zinc-400">APRIL 15, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">Discussions Underway with Naval Postgraduate School</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Exploratory conversations have begun regarding potential collaboration on resilient microgrid research and HOOP integration for naval and expeditionary energy resilience applications.</p>
+        <button onclick="showArticleModal(5)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-sm text-zinc-400">For press inquiries or full technical briefings, please <a href="index.html#contact" class="text-emerald-400 hover:underline">contact our team</a>.</p>
+    </div>
+  </section>
+
+  <!-- ARTICLE MODAL -->
+  <div id="article-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/70">
+    <div onclick="event.target.id === 'article-modal' && hideArticleModal()" class="absolute inset-0"></div>
+    
+    <div class="relative max-w-2xl w-full glass rounded-3xl border border-white/10 p-8 md:p-10 max-h-[85vh] overflow-auto">
+      <button onclick="hideArticleModal()" 
+              class="absolute top-6 right-6 text-zinc-400 hover:text-white text-2xl leading-none">&times;</button>
+      
+      <div id="modal-content">
+        <!-- Populated dynamically by JS -->
+      </div>
+      
+      <div class="mt-8 pt-6 border-t border-white/10 flex justify-between items-center text-sm">
+        <a href="index.html#contact" class="text-emerald-400 hover:underline">Request full briefing →</a>
+        <button onclick="hideArticleModal()" class="px-5 py-2 rounded-2xl border border-white/20 text-xs tracking-wider">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-zinc-950 py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-y-4 text-xs text-zinc-500">
+        <div>© 2026 Climate Risk Analytics, LLC. All rights reserved. 100% Made in the USA.</div>
+        <div class="flex items-center gap-x-5">
+          <a href="index.html" class="hover:text-white transition-colors">HOOP Energy</a>
+          <a href="news.html" class="hover:text-white transition-colors">News</a>
+          <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // News page specific scripts
+    const articles = [
+      {
+        date: "MAY 26, 2026",
+        category: "PRODUCT",
+        title: "HOOP Now Available for Data Center Pilots",
+        content: `<p>Climate Risk Analytics has officially opened presale for HOOP isothermal energy storage units targeted at data center operators. The offering includes both traditional prepaid leases and innovative shared-savings structures that require zero upfront capital from qualified customers.</p>
+        <p>Early pilots are being scheduled for Q3 2026 in the DMV region and select Western U.S. markets. The tri-generation capability (power + cooling + heat) provides compelling economics for facilities looking to reduce both electricity spend and Scope 1/2 emissions simultaneously.</p>
+        <p class="mt-4 text-emerald-400 text-sm">“One HOOP unit can offset significant diesel generation capacity while delivering measurable resilience.” — CRA Leadership</p>`
+      },
+      {
+        date: "MAY 20, 2026",
+        category: "POLICY",
+        title: "U.S. Manufacturing Supports Domestic Content Rules",
+        content: `<p>HOOP’s domestic manufacturing footprint (80%+ U.S. content) positions it exceptionally well under the Inflation Reduction Act domestic content bonus credit and emerging DoD / federal procurement preferences.</p>
+        <p>This alignment is increasingly important for data center developers, hyperscalers, and government-adjacent projects seeking to maximize tax credit value and meet supply chain security requirements.</p>`
+      },
+      {
+        date: "MAY 15, 2026",
+        category: "TECHNOLOGY",
+        title: "67%+ Tri-Generation Efficiency Confirmed",
+        content: `<p>Third-party validation testing completed in May 2026 confirmed combined system efficiency above 67% when accounting for simultaneous electricity generation, chilled water production, and high-temperature hot water recovery.</p>
+        <p>This multi-vector output significantly improves project economics compared to single-purpose battery storage and opens new use cases in district energy, industrial process heat, and absorption cooling integration.</p>`
+      },
+      {
+        date: "MAY 10, 2026",
+        category: "GRANTS",
+        title: "DOE SBIR Phase I Proposal Submitted",
+        content: `<p>CRA submitted a Phase I SBIR proposal to the U.S. Department of Energy focused on scaling isothermal compressed air storage for community microgrids and waste-heat-rich facilities such as data centers and manufacturing plants.</p>
+        <p>The proposed work builds directly on HOOP core technology with emphasis on modular, rapidly deployable systems suitable for tribal energy sovereignty projects and rural resilience applications.</p>`
+      },
+      {
+        date: "APRIL 28, 2026",
+        category: "IP",
+        title: "New Patent: Turbo-Asymmetric Energy Recovery",
+        content: `<p>A new U.S. provisional patent application was filed covering an advanced turbo-asymmetric expander and compressor architecture. This innovation further reduces parasitic losses and improves the round-trip efficiency of the core HOOP thermal storage cycle.</p>
+        <p>The technology is expected to be incorporated into future HOOP generations and is also being evaluated for standalone licensing opportunities.</p>`
+      },
+      {
+        date: "APRIL 15, 2026",
+        category: "DEFENSE",
+        title: "Naval Postgraduate School Collaboration Discussions",
+        content: `<p>Preliminary discussions have been initiated with faculty and researchers at the Naval Postgraduate School (NPS) regarding potential applied research collaborations. Topics include integration of HOOP-class systems into expeditionary microgrids and resilient power architectures for forward operating environments.</p>
+        <p>CRA’s naval family heritage and focus on rugged, DFARS-aligned systems make this a natural area of mutual interest.</p>`
+      }
+    ];
+
+    function showArticleModal(index) {
+      const modal = document.getElementById('article-modal');
+      const contentContainer = document.getElementById('modal-content');
+      const article = articles[index];
+      
+      if (!article) return;
+      
+      contentContainer.innerHTML = `
+        <div class="flex items-center gap-3 mb-3">
+          <span class="px-3 py-1 text-xs font-medium bg-white/10 text-white/70 rounded-full">${article.category}</span>
+          <span class="text-xs text-zinc-400">${article.date}</span>
+        </div>
+        <h2 class="text-3xl font-semibold tracking-tighter mb-6">${article.title}</h2>
+        <div class="prose prose-invert prose-sm max-w-none text-zinc-300">
+          ${article.content}
+        </div>
+      `;
+      
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function hideArticleModal() {
+      const modal = document.getElementById('article-modal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('article-modal');
+        if (!modal.classList.contains('hidden')) {
+          hideArticleModal();
+        }
+      }
+    });
+    
+    // Re-init mobile menu for news page (in case main.js doesn't catch it immediately)
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+    });
+  </script>
+</body>
+</html>

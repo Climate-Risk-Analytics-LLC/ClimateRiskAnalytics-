@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HOOP Isothermal Energy Storage by Climate Risk Analytics, LLC. Instant power, cooling, and heat from one rugged U.S.-manufactured container. 750 kW | 650 kWh | Tri-generation | Zero fire risk. Presale open.">
+  <meta name="keywords" content="HOOP energy storage, isothermal CAES, tri-generation, data center power, disaster recovery microgrid, U.S. manufactured energy, Climate Risk Analytics">
+  <title>Climate Risk Analytics, LLC | HOOP Isothermal Energy Storage — Instant Power Anywhere</title>
+  
+  <!-- Tailwind CSS via CDN for zero-build deployment -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-zinc-950 text-white antialiased">
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-x-3 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center group-hover:scale-105 transition-transform">
+            <span class="text-zinc-950 font-bold text-xl tracking-tighter">CRA</span>
+          </div>
+          <div>
+            <div class="font-display text-xl font-semibold tracking-tighter uppercase group-hover:text-cyan-400 transition-colors">Climate Risk</div>
+            <div class="text-[9px] text-zinc-500 -mt-1 tracking-[2px]">ANALYTICS, LLC</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center gap-x-8 text-sm font-medium">
+          <a href="index.html#why-hoop" class="nav-link">Energy Storage</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- CTA Buttons + Mobile Menu -->
+        <div class="flex items-center gap-x-3">
+          <a href="#contact" 
+             class="hidden md:block px-5 py-2 text-sm font-semibold rounded-2xl border border-white/20 hover:bg-white/5 transition-colors">
+            Request Briefing
+          </a>
+          <a href="#contact"
+             class="px-6 py-2.5 bg-white text-zinc-950 text-sm font-semibold rounded-2xl hover:bg-zinc-100 active:scale-[0.985] transition-all">
+            Apply for Pilot
+          </a>
+          
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" 
+                  class="lg:hidden w-10 h-10 flex items-center justify-center text-white/80 hover:text-white transition-colors"
+                  aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-zinc-950/95">
+      <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
+        <a href="index.html#why-hoop" class="py-1 nav-link">Energy Storage</a>
+        <a href="news.html" class="py-1 nav-link">News</a>
+        <a href="#contact" class="py-1 nav-link">Contact</a>
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <a href="#contact" class="px-5 py-2.5 text-center text-sm font-semibold rounded-2xl border border-white/20">Request Briefing</a>
+          <a href="#contact" class="px-5 py-2.5 text-center bg-white text-zinc-950 text-sm font-semibold rounded-2xl">Apply for Pilot</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative min-h-[100dvh] flex items-center pt-20 bg-zinc-950 overflow-hidden">
+    <img 
+      src="images/HOOP/hoop-hero-deployment.png" 
+      alt="HOOP container rapid deployment"
+      class="absolute inset-0 w-full h-full object-cover brightness-[0.55] scale-[1.02]">
+    
+    <div class="relative max-w-5xl mx-auto px-6 text-white z-10">
+      <div class="max-w-3xl">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full border border-white/30 bg-white/10 mb-6">
+          <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+          <span class="text-xs font-semibold tracking-[2px] uppercase">100% U.S. MANUFACTURED • MIL-STD-901E RUGGED</span>
+        </div>
+        
+        <h1 class="text-6xl md:text-7xl font-display font-bold tracking-tighter leading-[0.92] mb-6">
+          INSTANT POWER.<br>ANYWHERE. ANYTIME.
+        </h1>
+        
+        <p class="max-w-2xl text-2xl text-white/90 mb-8">
+          One rugged container delivers clean electricity, cooling, and heat.<br>
+          Built in the USA. Ready for data centers and critical missions.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#why-hoop" 
+             class="px-9 py-4 bg-white text-zinc-950 font-semibold rounded-3xl hover:bg-zinc-100 transition-all text-sm tracking-wider inline-flex items-center justify-center btn-primary">
+            EXPLORE ENERGY STORAGE
+          </a>
+          <a href="#contact" 
+             class="px-9 py-4 border border-white/40 hover:bg-white/10 font-semibold rounded-3xl text-sm tracking-wider transition-all inline-flex items-center justify-center">
+            REQUEST PILOT BRIEFING
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block">
+      <div class="flex flex-col items-center text-[10px] tracking-[3px] text-white/60">
+        SCROLL TO BEGIN
+        <div class="w-px h-8 bg-white/30 mt-2"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- KEY STATS BAR -->
+  <section class="max-w-7xl mx-auto px-6 py-12 border-b border-white/10">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-8 text-center">
+      <div>
+        <div class="text-4xl font-bold tracking-tighter">750 kW</div>
+        <div class="text-sm text-zinc-400 mt-1">Continuous Power</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold tracking-tighter">650 kWh</div>
+        <div class="text-sm text-zinc-400 mt-1">Energy Capacity</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold tracking-tighter">250–300</div>
+        <div class="text-sm text-zinc-400 mt-1">Tons Cooling</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold tracking-tighter">50–85°C</div>
+        <div class="text-sm text-zinc-400 mt-1">Hot Water Output</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold tracking-tighter">75–85%</div>
+        <div class="text-sm text-zinc-400 mt-1">Round-Trip Efficiency</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold tracking-tighter">10,000+</div>
+        <div class="text-sm text-zinc-400 mt-1">Cycle Life</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL WIDTH IMAGE 1 - Hardware & Comparison -->
+  <section class="w-full">
+    <img src="images/HOOP/hoop-hardware-comparison.png" 
+         alt="HOOP hardware specifications and comparison" 
+         class="w-full h-auto">
+    <div class="max-w-5xl mx-auto px-6 py-5 text-center">
+      <p class="text-xl text-zinc-300">One module = regional lifeline. Deploy by helicopter, crane, or forklift in hours.</p>
+    </div>
+  </section>
+
+  <!-- WHY HOOP -->
+  <section id="why-hoop" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-12">
+      <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold mb-2">WHY HOOP</div>
+      <h2 class="section-header font-display tracking-tighter">Simple. Safe. Built in America.</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Safer -->
+      <div class="simple-card glass rounded-3xl p-8 border border-white/10">
+        <div class="text-emerald-400 text-sm font-bold tracking-widest mb-3">SAFER</div>
+        <h3 class="text-2xl font-semibold mb-4">Zero Fire Risk</h3>
+        <p class="text-zinc-300">No thermal runaway. No toxic chemicals. Safe for indoor and data center use. Non-flammable thermal storage medium.</p>
+      </div>
+      
+      <!-- Smarter -->
+      <div class="simple-card glass rounded-3xl p-8 border border-white/10">
+        <div class="text-emerald-400 text-sm font-bold tracking-widest mb-3">SMARTER</div>
+        <h3 class="text-2xl font-semibold mb-4">Tri-Generation</h3>
+        <p class="text-zinc-300">Makes power + cooling + hot water at the same time from waste heat. Dramatically higher value per kWh stored.</p>
+      </div>
+      
+      <!-- Stronger -->
+      <div class="simple-card glass rounded-3xl p-8 border border-white/10">
+        <div class="text-emerald-400 text-sm font-bold tracking-widest mb-3">STRONGER</div>
+        <h3 class="text-2xl font-semibold mb-4">U.S. Manufactured</h3>
+        <p class="text-zinc-300">80%+ U.S. sourced materials. Aligns with domestic content rules, IRA tax credits, and defense procurement requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUS: TRI-GENERATION VALUE (hoop-value-tri-gen.png) -->
+  <section class="w-full">
+    <img src="images/HOOP/hoop-value-tri-gen.png" 
+         alt="HOOP Tri-Generation Value - Power + Cooling + Heat" 
+         class="w-full h-auto">
+    <div class="max-w-5xl mx-auto px-6 py-5 text-center">
+      <p class="text-xl text-emerald-300">One system. Three outputs. Maximum value.</p>
+    </div>
+  </section>
+
+  <!-- FULL WIDTH IMAGE 2 - Data Center Scenario -->
+  <section class="w-full">
+    <img src="images/HOOP/hoop-datacenter-scenario.png" 
+         alt="Hyperscale data center scenario" 
+         class="w-full h-auto">
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="max-w-3xl mb-10">
+      <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold mb-2">HOW IT WORKS</div>
+      <h2 class="section-header font-display tracking-tighter">Simple thermal storage.<br>Powerful results.</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-4 gap-6 mb-10">
+      <div class="glass rounded-3xl p-8 border border-white/10">
+        <div class="text-4xl mb-4 font-display text-emerald-400">01</div>
+        <h4 class="font-semibold mb-2 text-lg">Capture</h4>
+        <p class="text-sm text-zinc-300">Capture waste heat from data centers, industrial processes, or excess grid/renewable power.</p>
+      </div>
+      <div class="glass rounded-3xl p-8 border border-white/10">
+        <div class="text-4xl mb-4 font-display text-emerald-400">02</div>
+        <h4 class="font-semibold mb-2 text-lg">Store</h4>
+        <p class="text-sm text-zinc-300">Store energy safely as pressurized thermal energy in a non-flammable, non-toxic medium.</p>
+      </div>
+      <div class="glass rounded-3xl p-8 border border-white/10">
+        <div class="text-4xl mb-4 font-display text-emerald-400">03</div>
+        <h4 class="font-semibold mb-2 text-lg">Deliver</h4>
+        <p class="text-sm text-zinc-300">Provide on-demand electricity, cooling, and usable hot water through efficient heat engines and heat exchangers.</p>
+      </div>
+      <div class="glass rounded-3xl p-8 border border-white/10">
+        <div class="text-4xl mb-4 font-display text-emerald-400">04</div>
+        <h4 class="font-semibold mb-2 text-lg">Operate</h4>
+        <p class="text-sm text-zinc-300">Run grid-connected for arbitrage or in full island mode for mission-critical resilience.</p>
+      </div>
+    </div>
+    
+    <!-- Workflow Diagram -->
+    <img src="images/HOOP/hoop-workflow-diagram.png" 
+         alt="HOOP workflow diagram" 
+         class="w-full h-auto rounded-3xl border border-white/10">
+  </section>
+
+  <!-- CUMULATIVE BENEFIT -->
+  <section class="w-full bg-zinc-950 py-8 border-y border-white/10">
+    <img src="images/HOOP/hoop-cumulative-benefit.png" 
+         alt="HOOP Cumulative Net Benefit Over 3 Years" 
+         class="w-full h-auto">
+    <div class="max-w-5xl mx-auto px-6 pt-5 text-center">
+      <p class="text-xl text-emerald-300 font-medium">Zero Capex • Zero Maintenance • Immediate measurable value</p>
+    </div>
+  </section>
+
+  <!-- DISASTER RECOVERY -->
+  <section class="w-full bg-zinc-950 py-8">
+    <img src="images/HOOP/hoop-disaster-recovery.png" 
+         alt="HOOP Disaster Recovery & Emergency Response Microgrid" 
+         class="w-full h-auto">
+    <div class="max-w-5xl mx-auto px-6 pt-5 text-center">
+      <p class="text-xl text-emerald-300">One rugged module = rapid disaster recovery. Powers 4 homes for 40 days or critical infrastructure for weeks.</p>
+    </div>
+  </section>
+
+  <!-- MINING + SOLAR INTEGRATION -->
+  <section class="w-full bg-zinc-950 py-8">
+    <img src="images/HOOP/hoop-mining-solar-microgrid.png" 
+         alt="HOOP Microgrid + Solar Integration for Mining Operations" 
+         class="w-full h-auto">
+    <div class="max-w-5xl mx-auto px-6 pt-5 text-center">
+      <p class="text-xl text-emerald-300">Zero-Diesel • Maximum Cost Savings • Autonomous Renewable Microgrid</p>
+    </div>
+  </section>
+
+  <!-- HOOP vs LITHIUM COMPARISON -->
+  <section class="w-full bg-zinc-950 py-8 border-b border-white/10">
+    <img src="images/HOOP/hoop-vs-lithium-comparison.png" 
+         alt="HOOP vs Lithium-Ion Comparison" 
+         class="w-full h-auto">
+    <div class="max-w-5xl mx-auto px-6 pt-5 text-center">
+      <p class="text-xl text-emerald-300">Superior safety + U.S. manufacturing alignment + tax credit advantage</p>
+    </div>
+  </section>
+
+  <!-- PRESALE OFFER SECTION -->
+  <section class="max-w-7xl mx-auto px-6 py-20 border-t border-white/10">
+    <div class="text-center mb-12">
+      <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold mb-2">PRESALE NOW OPEN</div>
+      <h2 class="section-header font-display tracking-tighter">Two Simple Options – Secure Your HOOP Unit Today</h2>
+      <p class="text-xl text-zinc-300 mt-4 max-w-2xl mx-auto">5-Year Lease of HOOP Energy Unit Services – Continental USA</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <!-- Option 1: Standard Lease -->
+      <div class="offer-card glass rounded-3xl p-10 border border-white/10 flex flex-col">
+        <div>
+          <div class="text-emerald-400 text-sm font-bold tracking-widest mb-2">OPTION 1</div>
+          <h3 class="text-3xl font-semibold mb-6">Standard Lease</h3>
+          
+          <div class="flex items-baseline mb-1">
+            <div class="text-6xl font-display font-bold tracking-tighter">$510,000</div>
+          </div>
+          <div class="text-zinc-400 mb-8">Upfront • 5-Year Total</div>
+          
+          <ul class="space-y-3.5 mb-10 text-zinc-300">
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>1 HOOP Energy Unit + 5 years prepaid services</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>Immediate delivery &amp; professional installation</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>Full tri-generation (Power + Hot Water + Cooling)</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>5% HOOP Bonus credits included</span></li>
+          </ul>
+        </div>
+        
+        <div class="mt-auto">
+          <!-- PayPal Button -->
+          <a href="https://www.paypal.com" target="_blank" rel="noopener" 
+             class="paypal-btn block">
+            <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
+                 alt="Pay with PayPal – Option 1 Standard Lease $510,000"
+                 class="w-full max-w-[280px] mx-auto">
+          </a>
+          <p class="text-center text-xs text-zinc-400 mt-4">Secure checkout • Instant confirmation • Buyer protection</p>
+        </div>
+      </div>
+      
+      <!-- Option 2: No-Money-Down -->
+      <div class="offer-card glass rounded-3xl p-10 border border-white/10 bg-gradient-to-br from-zinc-900 to-transparent flex flex-col">
+        <div>
+          <div class="text-emerald-400 text-sm font-bold tracking-widest mb-2">OPTION 2</div>
+          <h3 class="text-3xl font-semibold mb-6">No-Money-Down</h3>
+          
+          <div class="flex items-baseline mb-1">
+            <div class="text-6xl font-display font-bold tracking-tighter">$0</div>
+          </div>
+          <div class="text-zinc-400 mb-8">Upfront • Pay only from verified savings</div>
+          
+          <ul class="space-y-3.5 mb-10 text-zinc-300">
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>Zero upfront cost for qualified buyers</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>Pay from only 30% of your verified energy savings</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>70% shared savings retained by Climate Risk Analytics</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>5% HOOP Bonus credits included</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400 mt-1">✓</span> <span>Ideal for orders of 10+ units</span></li>
+          </ul>
+        </div>
+        
+        <div class="mt-auto">
+          <a href="#contact"
+             class="block w-full text-center py-5 bg-white text-zinc-950 font-semibold rounded-3xl hover:bg-emerald-400 hover:text-white active:scale-[0.985] transition-all text-lg">
+            Contact Us for No-Money-Down Details
+          </a>
+          <p class="text-center text-xs text-zinc-400 mt-4">AAA U.S. corporates &amp; qualified operators • Custom shared-savings contract</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12 text-sm text-zinc-400 max-w-md mx-auto">
+      5% HOOP Bonus applies to both options • Presale closes at 20 units or <strong class="text-white">June 30, 2026</strong>
+    </div>
+  </section>
+
+  <!-- NEWS TEASER -->
+  <section class="max-w-7xl mx-auto px-6 py-16 border-t border-white/10">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+      <div>
+        <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold mb-2">LATEST UPDATES</div>
+        <h2 class="section-header font-display tracking-tighter">News &amp; Updates</h2>
+      </div>
+      <a href="news.html" class="text-sm font-medium text-emerald-400 hover:underline inline-flex items-center gap-1 group">
+        View all news <span class="group-hover:translate-x-0.5 transition">→</span>
+      </a>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="news.html" class="simple-card glass rounded-3xl p-6 border border-white/10 block">
+        <div class="text-xs text-emerald-400 mb-2 font-medium">MAY 26, 2026</div>
+        <h4 class="font-semibold mb-3 text-lg leading-snug">HOOP Now Available for Data Center Pilots</h4>
+        <p class="text-sm text-zinc-300">Immediate tri-generation value with shared savings model available for hyperscale and edge operators.</p>
+      </a>
+      
+      <a href="news.html" class="simple-card glass rounded-3xl p-6 border border-white/10 block">
+        <div class="text-xs text-emerald-400 mb-2 font-medium">MAY 20, 2026</div>
+        <h4 class="font-semibold mb-3 text-lg leading-snug">U.S. Manufacturing Supports Domestic Content Rules</h4>
+        <p class="text-sm text-zinc-300">Strong alignment with 2026–2030 tax credit requirements and Buy American preferences for federal projects.</p>
+      </a>
+      
+      <a href="news.html" class="simple-card glass rounded-3xl p-6 border border-white/10 block">
+        <div class="text-xs text-emerald-400 mb-2 font-medium">MAY 15, 2026</div>
+        <h4 class="font-semibold mb-3 text-lg leading-snug">67%+ Tri-Generation Efficiency Confirmed</h4>
+        <p class="text-sm text-zinc-300">Independent third-party testing validates strong real-world performance across power, cooling, and heat recovery.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT / PARTNER WITH US -->
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-20">
+    <div class="text-center mb-10">
+      <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold mb-2">LET'S BUILD TOGETHER</div>
+      <h2 class="section-header font-display tracking-tighter">Partner With Us</h2>
+      <p class="text-zinc-400 mt-3 max-w-md mx-auto">Request a technical briefing or customized pilot deployment proposal for your facility or mission.</p>
+    </div>
+    
+    <form id="contact-form" class="glass rounded-3xl p-10 border border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-xs tracking-[1.5px] text-zinc-400 mb-1.5 font-medium">FULL NAME</label>
+          <input type="text" name="name" class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-2xl px-5 py-3 text-sm placeholder:text-zinc-500" placeholder="Alex Rivera" required>
+        </div>
+        <div>
+          <label class="block text-xs tracking-[1.5px] text-zinc-400 mb-1.5 font-medium">ORGANIZATION</label>
+          <input type="text" name="organization" class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-2xl px-5 py-3 text-sm placeholder:text-zinc-500" placeholder="U.S. Navy / Data Center Operator" required>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div>
+          <label class="block text-xs tracking-[1.5px] text-zinc-400 mb-1.5 font-medium">EMAIL ADDRESS</label>
+          <input type="email" name="email" class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-2xl px-5 py-3 text-sm placeholder:text-zinc-500" placeholder="you@domain.com" required>
+        </div>
+        <div>
+          <label class="block text-xs tracking-[1.5px] text-zinc-400 mb-1.5 font-medium">PHONE NUMBER</label>
+          <input type="tel" name="phone" class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-2xl px-5 py-3 text-sm placeholder:text-zinc-500" placeholder="(202) 555-0199">
+        </div>
+      </div>
+      
+      <div class="mt-6">
+        <label class="block text-xs tracking-[1.5px] text-zinc-400 mb-1.5 font-medium">MESSAGE / REQUIREMENTS</label>
+        <textarea name="message" rows="5" class="w-full bg-white/5 border border-white/20 focus:border-cyan-400 rounded-3xl px-5 py-4 text-sm placeholder:text-zinc-500 resize-y min-h-[120px]" placeholder="Brief description of your use case, timeline, or pilot needs..." required></textarea>
+      </div>
+      
+      <button type="submit"
+              class="mt-8 w-full py-4 bg-white text-zinc-950 font-semibold rounded-3xl hover:bg-zinc-100 active:scale-[0.985] transition-all text-sm tracking-wider btn-primary">
+        SUBMIT SECURE BRIEFING REQUEST
+      </button>
+      
+      <p class="text-center text-[10px] text-zinc-500 mt-4">Your information is handled confidentially. We typically respond within 24 hours.</p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-zinc-950 py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-y-4 text-xs text-zinc-500">
+        <div>
+          © 2026 Climate Risk Analytics, LLC. All rights reserved.<br class="md:hidden"> 100% Made in the USA.
+        </div>
+        <div class="flex items-center gap-x-5">
+          <a href="index.html" class="hover:text-white transition-colors">HOOP Energy</a>
+          <a href="news.html" class="hover:text-white transition-colors">News</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+          <span class="hidden md:inline text-white/30">•</span>
+          <span>Washington, DC</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  
+  <!-- Tailwind Script Configuration -->
+  <script>
+    function initializeTailwind() {
+      document.documentElement.style.setProperty('--accent', '#67f6ff');
+      
+      if (window.tailwind) {
+        window.tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                'display': ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif']
+              }
+            }
+          }
+        };
+      }
+    }
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeTailwind);
+    } else {
+      initializeTailwind();
+    }
+  </script>
+</body>
+</html>
