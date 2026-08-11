@@ -1,17 +1,3 @@
-Here is the fully corrected code. I fixed the critical JavaScript syntax error that would have broken the page (a missing closing backtick in the April 28th article) and corrected the spelling, grammar, and formatting throughout.
-
-### Key Corrections Made:
-
-1. **JavaScript Syntax Fix:** Added the missing closing backtick (```) at the end of the `APRIL 28, 2026` article in the `articles` array. Without this, the page's scripts would fail to load.
-2. **Spelling & Grammar:**
-* Fixed *"electromechanica"* and *"lectromechanica"* to **"electromechanical"**.
-* Fixed the grammatical error *"an innovative [electromechanical] technologies"* to **"innovative electromechanical technologies"**.
-* Changed *"CRA's Climate Risk Analytics, LLC (CRA)"* to just **"Climate Risk Analytics, LLC (CRA)"** to remove redundancy.
-
-
-3. **Typography & Modal Formatting:** Added proper HTML tags (`<p>`, `<h3>`, `<ul>`, `<li>`) inside the long JavaScript string for the April 28th article so it formats beautifully inside the modal instead of rendering as a giant, unreadable block of text.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,14 +142,14 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
         </button>
       </article>
 
-      <!-- Article 5 -->
+      <!-- Article 5 (UPDATED) -->
       <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 text-xs font-medium bg-orange-400/10 text-orange-400 rounded-full">IP</span>
           <span class="text-xs text-zinc-400">APRIL 28, 2026</span>
         </div>
-        <h3 class="text-2xl font-semibold tracking-tight mb-4">New Patent Filing: Innovative Electromechanical Technologies</h3>
-        <p class="text-zinc-300 mb-6 flex-1">A new provisional patent has been filed covering innovative electromechanical technologies that further reduce waste heat and improve round-trip efficiency in the HOOP platform.</p>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">35 Provisional Patents Filed Covering Full-Stack Energy Platform</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics has filed 35 provisional patent applications covering its full-stack technology platform, containerized isothermal energy storage, hybrid-fluid thermodynamics, and AI-accelerated simulation pipelines.</p>
         <button onclick="showArticleModal(4)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
@@ -191,10 +177,10 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
   </section>
 
   <!-- ARTICLE MODAL -->
-  <div id="article-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/70">
+  <div id="article-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/70 backdrop-blur-md">
     <div onclick="event.target.id === 'article-modal' && hideArticleModal()" class="absolute inset-0"></div>
     
-    <div class="relative max-w-2xl w-full glass rounded-3xl border border-white/10 p-8 md:p-10 max-h-[85vh] overflow-auto">
+    <div class="relative max-w-3xl w-full glass rounded-3xl border border-white/10 p-8 md:p-10 max-h-[85vh] overflow-auto">
       <button onclick="hideArticleModal()" 
               class="absolute top-6 right-6 text-zinc-400 hover:text-white text-2xl leading-none">&times;</button>
       
@@ -203,8 +189,8 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
       </div>
       
       <div class="mt-8 pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-        <a href="index.html#contact" class="text-emerald-400 hover:underline">Request full briefing →</a>
-        <button onclick="hideArticleModal()" class="px-5 py-2 rounded-2xl border border-white/20 text-xs tracking-wider">CLOSE</button>
+        <a href="index.html#contact" class="text-emerald-400 hover:underline font-medium">Request full briefing →</a>
+        <button onclick="hideArticleModal()" class="px-5 py-2 rounded-2xl border border-white/20 text-xs tracking-wider hover:bg-white/10 transition-colors">CLOSE</button>
       </div>
     </div>
   </div>
@@ -231,98 +217,148 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
         date: "MAY 26, 2026",
         category: "PRODUCT",
         title: "HOOP Now Available for Data Center Pilots",
-        content: `<p>Climate Risk Analytics has officially opened presale for HOOP isothermal energy storage units targeted at data center operators. The offering includes both traditional prepaid leases and innovative shared-savings structures that require zero upfront capital from qualified customers.</p>
-        <p>Early pilots are being scheduled for Q3 2026 in the DMV region and select Western U.S. markets. The tri-generation capability (power + cooling + heat) provides compelling economics for facilities looking to reduce both electricity spend and Scope 1/2 emissions simultaneously.</p>
-        <p class="mt-4 text-emerald-400 text-sm">“One HOOP unit can offset significant diesel generation capacity while delivering measurable resilience.” — CRA Leadership</p>`
+        content: `<p class="mb-4">Climate Risk Analytics has officially opened presale for HOOP isothermal energy storage units targeted at data center operators. The offering includes both traditional prepaid leases and innovative shared-savings structures that require zero upfront capital from qualified customers.</p>
+        <p class="mb-4">Early pilots are being scheduled for Q3 2026 in the DMV region and select Western U.S. markets. The tri-generation capability (power + cooling + heat) provides compelling economics for facilities looking to reduce both electricity spend and Scope 1/2 emissions simultaneously.</p>
+        <p class="mt-4 text-emerald-400 text-sm font-medium border-l-2 border-emerald-400 pl-3">“One HOOP unit can offset significant diesel generation capacity while delivering measurable resilience.” — CRA Leadership</p>`
       },
       {
         date: "MAY 20, 2026",
         category: "POLICY",
         title: "U.S. Manufacturing Supports Domestic Content Rules",
-        content: `<p>HOOP’s domestic manufacturing footprint (80%+ U.S. content) positions it exceptionally well under the Inflation Reduction Act domestic content bonus credit and emerging DoD / federal procurement preferences.</p>
+        content: `<p class="mb-4">HOOP’s domestic manufacturing footprint (80%+ U.S. content) positions it exceptionally well under the Inflation Reduction Act domestic content bonus credit and emerging DoD / federal procurement preferences.</p>
         <p>This alignment is increasingly important for data center developers, hyperscalers, and government-adjacent projects seeking to maximize tax credit value and meet supply chain security requirements.</p>`
       },
       {
         date: "MAY 15, 2026",
         category: "TECHNOLOGY",
         title: "67%+ Tri-Generation Efficiency Confirmed",
-        content: `<p>Third-party validation testing completed in May 2026 confirmed combined system efficiency above 67% when accounting for simultaneous electricity generation, chilled water production, and high-temperature hot water recovery.</p>
+        content: `<p class="mb-4">Third-party validation testing completed in May 2026 confirmed combined system efficiency above 67% when accounting for simultaneous electricity generation, chilled water production, and high-temperature hot water recovery.</p>
         <p>This multi-vector output significantly improves project economics compared to single-purpose battery storage and opens new use cases in district energy, industrial process heat, and absorption cooling integration.</p>`
       },
       {
         date: "MAY 10, 2026",
         category: "GRANTS",
         title: "DOE SBIR Phase I Proposal Submitted",
-        content: `<p>CRA submitted a Phase I SBIR proposal to the U.S. Department of Energy focused on scaling isothermal compressed air storage for community microgrids and waste-heat-rich facilities such as data centers and manufacturing plants.</p>
+        content: `<p class="mb-4">CRA submitted a Phase I SBIR proposal to the U.S. Department of Energy focused on scaling isothermal compressed air storage for community microgrids and waste-heat-rich facilities such as data centers and manufacturing plants.</p>
         <p>The proposed work builds directly on HOOP core technology with emphasis on modular, rapidly deployable systems suitable for tribal energy sovereignty projects and rural resilience applications.</p>`
       },
       {
         date: "APRIL 28, 2026",
         category: "IP",
         title: "Technology Platform: Turning Waste Heat Into Dispatchable Energy Through Advanced Engineering, AI Modeling, and Hybrid-Fluid Innovation",
-        content: `<p>Climate Risk Analytics, LLC (CRA) has built a full-stack technology platform that converts industrial waste heat into dispatchable, modular energy. The systems enable peak shaving, load balancing, and measurable carbon-intensity reduction without forcing plants to shut down or undertake full production-line retrofits. What began as a practical engineering response to a widespread industrial inefficiency has matured into an integrated innovation ecosystem powered by hybrid-fluid thermodynamics, high-fidelity simulation, and cloud-native AI.</p>
-          
-          <h3 class="text-xl font-bold mt-6 mb-2 text-white">Origin Story: The Waste-Heat Blind Spot</h3>
-          <p>CRA’s founding insight came from direct observation of a systemic failure across heavy industry. In glass manufacturing, cement production, steel processing, and refractory operations, enormous quantities of high-grade thermal energy are routinely vented to the atmosphere. Early fieldwork and technical discussions with the International Finance Corporation (IFC) confirmed the scale of the problem, particularly in emerging markets: factories were losing millions of dollars annually in unrecovered heat while simultaneously facing rising energy costs, unreliable grids, and aging infrastructure.</p>
-          
-          <p class="mt-4 font-semibold text-emerald-400">This reality became CRA’s catalytic mission:</p>
-          <p class="italic mb-6">Design modular, containerized systems that capture industrial waste heat and convert it into dispatchable energy using compressed-air storage and hybrid water/air thermal-recovery cycles.</p>
-          
-          <p>The resulting architecture supports industrial waste-heat recovery, data-center thermal management, virtual power plant (VPP) integration, and resilient microgrids—all without requiring major process interruptions.</p>
-          
-          <h3 class="text-xl font-bold mt-6 mb-2 text-white">Hybrid-Fluid Technologies: Air, LPG, and Hydrogen</h3>
-          <p>CRA’s intellectual-property portfolio centers on hybrid-fluid energy cycles that combine three complementary media:</p>
-          <ul class="list-disc pl-5 mb-4 text-zinc-300">
-            <li><strong>Compressed air</strong> — fast-response, modular, containerized storage</li>
-            <li><strong>LPG (liquefied petroleum gas)</strong> — high-density thermal carrier</li>
-            <li><strong>Hydrogen</strong> — long-duration, high-efficiency pathway</li>
+        content: `
+          <p class="text-zinc-300 leading-relaxed mb-6">
+            Climate Risk Analytics, LLC (CRA) has built a full-stack technology platform that converts industrial waste heat into dispatchable, modular energy. The systems enable peak shaving, load balancing, and measurable carbon-intensity reduction without forcing plants to shut down or undertake full production-line retrofits. What began as a practical engineering response to a widespread industrial inefficiency has matured into an integrated innovation ecosystem powered by hybrid-fluid thermodynamics, high-fidelity simulation, and cloud-native AI.
+          </p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Origin Story: The Waste-Heat Blind Spot</h3>
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            CRA’s founding insight came from direct observation of a systemic failure across heavy industry. In glass manufacturing, cement production, steel processing, and refractory operations, enormous quantities of high-grade thermal energy are routinely vented to the atmosphere. Early fieldwork and technical discussions with the International Finance Corporation (IFC) confirmed the scale of the problem, particularly in emerging markets: factories were losing millions of dollars annually in unrecovered heat while simultaneously facing rising energy costs, unreliable grids, and aging infrastructure.
+          </p>
+
+          <div class="my-6 p-5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
+            <span class="block text-xs uppercase tracking-wider text-emerald-400 font-bold mb-1">CRA's Catalytic Mission</span>
+            <p class="font-medium text-emerald-200">
+              Design modular, containerized systems that capture industrial waste heat and convert it into dispatchable energy using compressed-air storage and hybrid water/air thermal-recovery cycles.
+            </p>
+          </div>
+
+          <p class="text-zinc-300 leading-relaxed mb-6">
+            The resulting architecture supports industrial waste-heat recovery, data-center thermal management, virtual power plant (VPP) integration, and resilient microgrids—all without requiring major process interruptions.
+          </p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Hybrid-Fluid Technologies: Air, LPG, and Hydrogen</h3>
+          <p class="text-zinc-300 leading-relaxed mb-3">
+            CRA’s intellectual-property portfolio centers on hybrid-fluid energy cycles that combine three complementary media:
+          </p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Compressed air:</strong> Fast-response, modular, containerized storage</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">LPG (liquefied petroleum gas):</strong> High-density thermal carrier</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Hydrogen:</strong> Long-duration, high-efficiency pathway</span>
+            </li>
           </ul>
-          
-          <p>These cycles are tunable for different duty profiles: industrial waste-heat recovery, data-center cooling, peak shaving, load balancing, and VPP participation. The multi-fluid approach is a deliberate differentiator both in CRA’s patent filings and in its trade-secret strategy for cycle tuning and control.</p>
-          
-          <p>CRA has filed a concentrated series of 35 provisional patent applications that form the core of its current intellectual-property portfolio. These filings establish early priority dates across energy storage, waste-heat recovery, hybrid-fluid systems, cyber-physical controls, and related enabling technologies. The concentration of activity—particularly the dense cluster of applications received in February and March 2026—reflects high innovation velocity for a company that moved from active product development into formal IP protection in a compressed timeframe.</p>
-          
-          <p>A substantial and strategically prioritized portion of the portfolio—11 of the 35 applications, or approximately 31%—directly addresses containerized or modular isothermal/adiabatic compressed-air energy storage (“compressed-air batteries”), near-isothermal pneumatic cycles, waste-heat-driven tri-generation, and the thermal-management innovations that make these systems practical. This focused density creates a protective thicket around CRA’s core platform rather than a diffuse collection of unrelated inventions.</p>
-          
-          <h3 class="text-xl font-bold mt-6 mb-2 text-white">Google-Powered Engineering: CFD, Machine Learning, and Accelerated Development</h3>
-          <p>CRA capitalizes on the rapid advances in computational fluid dynamics (CFD) and machine-learning/AI (MLA) by embedding Google Cloud Platform (GCP), Gemini, and Grok directly into its engineering workflow. Modern CFD has moved far beyond traditional solvers. Peer-reviewed and industrial results now routinely demonstrate 40- to 80-fold computational speedups when deep learning is integrated into turbulent-flow simulation, with accuracy matching baseline solvers run at 8–10× finer spatial resolution. Broader AI-accelerated CFD pipelines report speedups ranging from 40× to more than 200× when combining physics-informed neural networks, surrogate models, and GPU/TPU hardware. Surrogate models can reduce parametric design exploration from months to hours, and agentic AI workflows are compressing what previously required years of CFD development into weeks.</p>
-          
-          <p class="mt-4">CRA exploits these leaps at full scale:</p>
-          <ul class="list-disc pl-5 mb-4 text-zinc-300">
-            <li>CFD simulations across millions of mesh cells for isothermal flow, heat transfer, and pressure-vessel behavior</li>
-            <li>MLA predictive models for thermal stratification, load forecasting, and cycle optimization</li>
-            <li>Full-stack product testing and model-evaluation loops running on parallel GCP compute clusters</li>
-            <li>Rapid iteration of hybrid-fluid thermodynamics, containerized system layouts, and control architectures</li>
+
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            These cycles are tunable for different duty profiles: industrial waste-heat recovery, data-center cooling, peak shaving, load balancing, and VPP participation. The multi-fluid approach is a deliberate differentiator both in CRA’s patent filings and in its trade-secret strategy for cycle tuning and control.
+          </p>
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            CRA has filed a concentrated series of 35 provisional patent applications that form the core of its current intellectual-property portfolio. These filings establish early priority dates across energy storage, waste-heat recovery, hybrid-fluid systems, cyber-physical controls, and related enabling technologies. The concentration of activity—particularly the dense cluster of applications received in April and May 2026—reflects high innovation velocity for a company that moved from active product development into formal IP protection in a compressed timeframe.
+          </p>
+          <p class="text-zinc-300 leading-relaxed mb-6">
+            A substantial and strategically prioritized portion of the portfolio directly addresses containerized or modular isothermal/adiabatic compressed-air energy storage (“compressed-air batteries”), near-isothermal pneumatic cycles, waste-heat-driven tri-generation, and related thermal-management innovations such as the Air Halo internal circulator.
+          </p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Google-Powered Engineering: CFD, Machine Learning &amp; AI</h3>
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            CRA capitalizes on rapid advances in computational fluid dynamics (CFD) and machine learning by embedding Google Cloud Platform (GCP), Gemini, and Grok directly into its engineering workflow. Modern CFD has moved far beyond traditional solvers; peer-reviewed results demonstrate 40- to 80-fold computational speedups when deep learning is integrated into turbulent-flow simulations, with accuracy matching baseline solvers run at 8–10× finer spatial resolution.
+          </p>
+          <p class="text-zinc-300 leading-relaxed mb-3">
+            CRA exploits these leaps at full scale across its operations:
+          </p>
+          <ul class="grid md:grid-cols-2 gap-3 mb-6">
+            <li class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-zinc-300">
+              <strong class="text-white block mb-1">Multi-Cell CFD</strong>
+              Simulations across millions of mesh cells for isothermal flow, heat transfer, and pressure vessel behavior.
+            </li>
+            <li class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-zinc-300">
+              <strong class="text-white block mb-1">MLA Predictive Models</strong>
+              Real-time models for thermal stratification, load forecasting, and cycle optimization.
+            </li>
+            <li class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-zinc-300">
+              <strong class="text-white block mb-1">GCP Cloud Clusters</strong>
+              Full-stack product testing and model-evaluation loops running on parallel compute hardware.
+            </li>
+            <li class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-zinc-300">
+              <strong class="text-white block mb-1">Rapid Cycle Iteration</strong>
+              Accelerated development of hybrid-fluid thermodynamics, container layouts, and control software.
+            </li>
           </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Trade Secrets, IP Strategy &amp; Technical Moats</h3>
+          <p class="text-zinc-300 leading-relaxed mb-4">
+            CRA employs a dual intellectual-property strategy combining patent density with deeply embedded trade secrets:
+          </p>
           
-          <p>The combination allows CRA to simulate complete industrial energy-recovery systems—waste-heat capture, near-isothermal compressed-air storage, tri-generation, and cyber-physical controls—before any physical prototype is built. Design cycles that once spanned months are routinely compressed into days. This software-accelerated capability is the engine that converts real-world industrial observations into validated patentable inventions at high velocity.</p>
-          
-          <h3 class="text-xl font-bold mt-6 mb-2 text-white">Trade Secrets, IP Strategy, and Technical Moats</h3>
-          <p>CRA employs a dual intellectual-property strategy:</p>
-          
-          <p class="font-semibold text-white mt-4">1. Patents for core technologies</p>
-          <ul class="list-disc pl-5 mb-4 text-zinc-300">
-            <li>Containerized Hybrid Fluids scalable modular power and thermal supplier battery and optional cogeneration (modular isothermal and adiabatic systems)</li>
-            <li>Hybrid water/air and multi-fluid waste-heat recovery</li>
-            <li>Cyber-physical orchestration architectures</li>
-            <li>Modular VPP integration and grid-responsive controls</li>
-          </ul>
-          
-          <p class="font-semibold text-white mt-4">2. Trade secrets for proprietary methods</p>
-          <ul class="list-disc pl-5 mb-4 text-zinc-300">
-            <li>CFD optimization pipelines and mesh strategies</li>
-            <li>ML-driven thermal-flow prediction models</li>
-            <li>Hybrid-fluid cycle tuning algorithms</li>
-            <li>GCP/Gemini/Grok model-evaluation and agentic workflows</li>
-          </ul>
-          
-          <p class="mt-6 font-semibold italic text-emerald-400">Even if competitors reverse-engineer hardware form factors, they cannot easily replicate the closed-loop, AI-orchestrated engineering engine that generates, validates, and refines the designs.</p>`
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-2">1. Patents for Core Tech</span>
+              <ul class="text-xs text-zinc-300 space-y-1.5 list-disc pl-4">
+                <li>Containerized Hybrid Fluids &amp; modular power systems</li>
+                <li>Hybrid water/air and multi-fluid waste-heat recovery</li>
+                <li>Cyber-physical orchestration architectures</li>
+                <li>Modular VPP integration and grid-responsive controls</li>
+              </ul>
+            </div>
+            
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider block mb-2">2. Proprietary Trade Secrets</span>
+              <ul class="text-xs text-zinc-300 space-y-1.5 list-disc pl-4">
+                <li>CFD optimization pipelines and mesh strategies</li>
+                <li>ML-driven thermal-flow prediction models</li>
+                <li>Hybrid-fluid cycle tuning algorithms</li>
+                <li>GCP/Gemini/Grok model-evaluation and agentic workflows</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="p-4 rounded-2xl bg-zinc-900 border border-white/10 text-zinc-300 text-sm italic">
+            Even if competitors reverse-engineer hardware form factors, they cannot easily replicate the closed-loop, AI-orchestrated engineering engine that generates, validates, and refines the designs.
+          </p>
+        `
       },
       {
         date: "APRIL 15, 2026",
         category: "DEFENSE",
         title: "Naval Postgraduate School Collaboration Discussions",
-        content: `<p>Preliminary discussions have been initiated with faculty and researchers at the Naval Postgraduate School (NPS) regarding potential applied research collaborations. Topics include integration of HOOP-class systems into expeditionary microgrids and resilient power architectures for forward operating environments.</p>
+        content: `<p class="mb-4">Preliminary discussions have been initiated with faculty and researchers at the Naval Postgraduate School (NPS) regarding potential applied research collaborations. Topics include integration of HOOP-class systems into expeditionary microgrids and resilient power architectures for forward operating environments.</p>
         <p>CRA’s naval family heritage and focus on rugged, DFARS-aligned systems make this a natural area of mutual interest.</p>`
       }
     ];
@@ -339,7 +375,7 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
           <span class="px-3 py-1 text-xs font-medium bg-white/10 text-white/70 rounded-full">${article.category}</span>
           <span class="text-xs text-zinc-400">${article.date}</span>
         </div>
-        <h2 class="text-3xl font-semibold tracking-tighter mb-6">${article.title}</h2>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tighter mb-6 leading-tight">${article.title}</h2>
         <div class="prose prose-invert prose-sm max-w-none text-zinc-300">
           ${article.content}
         </div>
@@ -367,7 +403,7 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
       }
     });
     
-    // Re-init mobile menu for news page (in case main.js doesn't catch it immediately)
+    // Re-init mobile menu for news page
     document.addEventListener('DOMContentLoaded', function() {
       const mobileMenuBtn = document.getElementById('mobile-menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
@@ -385,5 +421,3 @@ Here is the fully corrected code. I fixed the critical JavaScript syntax error t
   </script>
 </body>
 </html>
-
-```
