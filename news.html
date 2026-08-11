@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,12 +82,26 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <div class="flex items-center justify-between mb-8">
       <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold">ALL UPDATES • 2026</div>
-      <div class="text-sm text-zinc-400">3 articles shown</div>
+      <div class="text-sm text-zinc-400">4 articles shown</div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Article 0 (NEW: CRA's Technology Platform) -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-orange-400/10 text-orange-400 rounded-full">PLATFORM</span>
+          <span class="text-xs text-zinc-400">AUGUST 11, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">CRA’s Technology Platform: Turning Waste Heat Into Dispatchable Energy</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics, LLC (CRA) has built a full-stack technology platform that converts industrial waste heat into dispatchable, modular energy.</p>
+        <button onclick="showArticleModal(0)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
       
-      <!-- Article 0 (IP Strategy) -->
+      <!-- Article 1 (IP Strategy) -->
       <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 text-xs font-medium bg-purple-400/10 text-purple-400 rounded-full">INTELLECTUAL PROPERTY</span>
@@ -94,13 +109,13 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">IP Strategy &amp; AI-Accelerated Engineering: CRA Files 35 Provisional Patents</h3>
         <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics establishes a protective IP thicket with 35 provisional patent filings while leveraging Google Cloud, Gemini, and Grok for AI-driven CFD simulations.</p>
-        <button onclick="showArticleModal(0)" 
+        <button onclick="showArticleModal(1)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
       </article>
 
-      <!-- Article 1 (CYBER-NOUGHT) -->
+      <!-- Article 2 (CYBER-NOUGHT) -->
       <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 text-xs font-medium bg-blue-400/10 text-blue-400 rounded-full">TECHNOLOGY</span>
@@ -108,13 +123,13 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">CYBER-NOUGHT: A Resilient, Low-Impact Approach to Microgrids and Data Centers</h3>
         <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics (CRA) developed CYBER-NOUGHT to address the escalating energy demands of data centers without inheriting the environmental, supply-chain, and operational liabilities of conventional power systems.</p>
-        <button onclick="showArticleModal(1)" 
+        <button onclick="showArticleModal(2)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
       </article>
 
-      <!-- Article 2 (HOOP) -->
+      <!-- Article 3 (HOOP) -->
       <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 text-xs font-medium bg-emerald-400/10 text-emerald-400 rounded-full">PRODUCT</span>
@@ -122,7 +137,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">HOOP Now Available for Data Center Pilots</h3>
         <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics has opened presale slots for HOOP units specifically targeting hyperscale and edge data center operators seeking immediate tri-generation value.</p>
-        <button onclick="showArticleModal(2)" 
+        <button onclick="showArticleModal(3)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -165,6 +180,104 @@
   <script>
     const articles = [
       // --- INDEX 0 ---
+      {
+        date: "AUGUST 11, 2026",
+        category: "PLATFORM",
+        title: "CRA’s Technology Platform: Turning Waste Heat Into Dispatchable Energy Through Advanced Engineering, AI Modeling, and Hybrid-Fluid Innovation",
+        content: `
+          <p class="mb-4 text-zinc-300">Climate Risk Analytics, LLC (CRA) has built a full-stack technology platform that converts industrial waste heat into dispatchable, modular energy. The systems enable peak shaving, load balancing, and measurable carbon-intensity reduction without forcing plants to shut down or undertake full production-line retrofits. What began as a practical engineering response to a widespread industrial inefficiency has matured into an integrated innovation ecosystem powered by hybrid-fluid thermodynamics, high-fidelity simulation, and cloud-native AI.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Origin Story: The Waste-Heat Blind Spot</h3>
+          <p class="mb-4 text-zinc-300">CRA’s founding insight came from direct observation of a systemic failure across heavy industry. In glass manufacturing, cement production, steel processing, and refractory operations, enormous quantities of high-grade thermal energy are routinely vented to atmosphere. Early fieldwork and technical discussions with the International Finance Corporation (IFC) confirmed the scale of the problem, particularly in emerging markets: factories were losing millions of dollars annually in unrecovered heat while simultaneously facing rising energy costs, unreliable grids, and aging infrastructure.</p>
+          
+          <p class="mb-4 text-zinc-300">This reality became CRA’s catalytic mission:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Design modular, containerized systems that capture industrial waste heat and convert it into dispatchable energy hybrid storage and hybrid water/air thermal-recovery cycles.</span>
+            </li>
+          </ul>
+          
+          <p class="mb-4 text-zinc-300">The resulting architecture supports industrial waste-heat recovery, data-center thermal management, virtual power plant (VPP) integration, and resilient microgrids—all without requiring major process interruptions.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Hybrid-Fluid Technologies</h3>
+          <p class="mb-4 text-zinc-300">CRA’s intellectual-property portfolio centers on hybrid-fluid energy cycles that combine three complementary media. These cycles are tunable for different duty profiles: industrial waste-heat recovery, data-center cooling, peak shaving, load balancing, and VPP participation. The multi-fluid approach is a deliberate differentiator both in CRA’s patent filings and in its trade-secret strategy for cycle tuning and control.</p>
+
+          <p class="mb-4 text-zinc-300">CRA has filed a concentrated series of 35 provisional patent applications that form the core of its current intellectual-property portfolio. These filings establish early priority dates across energy storage, waste-heat recovery, hybrid-fluid systems, cyber-physical controls, and related enabling technologies. The concentration of activity—particularly the dense cluster of applications received in April and May 2026—reflects high innovation velocity for a company that moved from active product development into formal IP protection in a compressed timeframe. This focused density creates a protective thicket around CRA’s core platform rather than a diffuse collection of unrelated inventions.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Development</h3>
+          <p class="mb-4 text-zinc-300">CRA capitalizes on the rapid advances in computational fluid dynamics (CFD) and machine-learning/AI (MLA) by embedding Google Cloud Platform (GCP), Gemini, and Grok directly into its engineering workflow. Modern CFD has moved far beyond traditional solvers. Peer-reviewed and industrial results now routinely demonstrate 40- to 80-fold computational speedups when deep learning is integrated into turbulent-flow simulation, with accuracy matching baseline solvers run at 8–10× finer spatial resolution. Broader AI-accelerated CFD pipelines report speedups ranging from 40× to more than 200× when combining physics-informed neural networks, surrogate models, and GPU/TPU hardware. Surrogate models can reduce parametric design exploration from months to hours, and agentic AI workflows are compressing what previously required years of CFD development into weeks.</p>
+
+          <p class="mb-4 text-zinc-300">CRA exploits these leaps at full scale:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>CFD simulations across millions of mesh cells for isothermal flow, heat transfer, and pressure-vessel behavior</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>MLA predictive models for thermal stratification, load forecasting, and cycle optimization</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Full-stack product testing and model-evaluation loops running on parallel GCP compute clusters</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Rapid iteration of hybrid-fluid thermodynamics, containerized system layouts, and control architectures</span>
+            </li>
+          </ul>
+
+          <p class="mb-4 text-zinc-300">The combination allows CRA to simulate complete industrial energy-recovery systems—waste-heat capture, storage, tri-generation, and cyber-physical controls—before any physical prototype is built. Design cycles that once spanned months are routinely compressed into days. This software-accelerated capability is the engine that converts real-world industrial observations into validated patentable inventions at high velocity.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Trade Secrets, IP Strategy, and Technical Moats</h3>
+          <p class="mb-4 text-zinc-300">CRA employs a dual intellectual-property strategy:</p>
+          
+          <p class="text-white font-semibold mt-4 mb-2">1. Patents for core technologies</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Containerized Hybrid Fluids scalable modular power and thermal supplier battery and optional- cogeneration (modular isothermal and adiabatic systems)</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Hybrid water/air and multi-fluid waste-heat recovery</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Cyber-physical orchestration architectures</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Modular VPP integration and grid-responsive controls</span>
+            </li>
+          </ul>
+
+          <p class="text-white font-semibold mt-4 mb-2">2. Trade secrets for proprietary methods</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>CFD optimization pipelines and mesh strategies</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>ML-driven thermal-flow prediction models</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>Hybrid-fluid cycle tuning algorithms</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span>GCP/Gemini/Grok model-evaluation and agentic workflows</span>
+            </li>
+          </ul>
+
+          <p class="mb-4 text-zinc-300">Even if competitors reverse-engineer hardware form factors, they cannot easily replicate the closed-loop, AI-orchestrated engineering engine that generates, validates, and refines the designs.</p>
+        `
+      },
+
+      // --- INDEX 1 ---
       {
         date: "AUGUST 11, 2026",
         category: "INTELLECTUAL PROPERTY",
@@ -246,7 +359,7 @@
         `
       },
       
-      // --- INDEX 1 ---
+      // --- INDEX 2 ---
       {
         date: "AUGUST 4, 2026",
         category: "TECHNOLOGY",
@@ -305,7 +418,7 @@
         `
       },
 
-      // --- INDEX 2 ---
+      // --- INDEX 3 ---
       {
         date: "MAY 26, 2026",
         category: "PRODUCT",
@@ -357,3 +470,5 @@
   </script>
 </body>
 </html>
+
+```
