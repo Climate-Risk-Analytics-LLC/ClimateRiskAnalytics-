@@ -81,11 +81,25 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <div class="flex items-center justify-between mb-8">
       <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold">ALL UPDATES • 2026</div>
-      <div class="text-sm text-zinc-400">6 articles shown</div>
+      <div class="text-sm text-zinc-400">7 articles shown</div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
       
+      <!-- Article 0 (NEW) -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-blue-400/10 text-blue-400 rounded-full">TECHNOLOGY</span>
+          <span class="text-xs text-zinc-400">AUGUST 4, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">CYBER-NOUGHT: A Resilient, Low-Impact Approach to Microgrids and Data Centers</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics (CRA) developed CYBER-NOUGHT to address the escalating energy demands of data centers without inheriting the environmental, supply-chain, and operational liabilities of conventional power systems.</p>
+        <button onclick="showArticleModal(0)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
       <!-- Article 1 -->
       <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
         <div class="flex items-center gap-3 mb-4">
@@ -94,7 +108,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">HOOP Now Available for Data Center Pilots</h3>
         <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics has opened presale slots for HOOP units specifically targeting hyperscale and edge data center operators seeking immediate tri-generation value. The shared-savings model allows operators to deploy with zero upfront capital.</p>
-        <button onclick="showArticleModal(0)" 
+        <button onclick="showArticleModal(1)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -108,7 +122,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">U.S. Manufacturing Supports Domestic Content Rules</h3>
         <p class="text-zinc-300 mb-6 flex-1">With over 80% U.S. sourced materials and components, HOOP units qualify strongly under current and proposed domestic content requirements for federal tax credits and defense procurement programs through 2030.</p>
-        <button onclick="showArticleModal(1)" 
+        <button onclick="showArticleModal(2)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -122,7 +136,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">67%+ Tri-Generation Efficiency Confirmed</h3>
         <p class="text-zinc-300 mb-6 flex-1">Independent laboratory and field testing has validated combined round-trip efficiency exceeding 67% when including power generation, cooling delivery, and high-grade heat recovery — significantly outperforming conventional lithium-based systems in multi-output scenarios.</p>
-        <button onclick="showArticleModal(2)" 
+        <button onclick="showArticleModal(3)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -136,7 +150,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">DOE SBIR Phase I Proposal Submitted for Advanced Isothermal Storage</h3>
         <p class="text-zinc-300 mb-6 flex-1">CRA has submitted a DOE SBIR proposal focused on next-generation isothermal compressed air energy storage optimized for data center waste heat recovery and microgrid applications in tribal and rural communities.</p>
-        <button onclick="showArticleModal(3)" 
+        <button onclick="showArticleModal(4)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -150,7 +164,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">35 Provisional Patents Filed Covering Full-Stack Energy Platform</h3>
         <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics has filed 35 provisional patent applications covering its full-stack technology platform, containerized isothermal energy storage, hybrid-fluid thermodynamics, and AI-accelerated simulation pipelines.</p>
-        <button onclick="showArticleModal(4)" 
+        <button onclick="showArticleModal(5)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -164,7 +178,7 @@
         </div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">Discussions Underway with Naval Postgraduate School</h3>
         <p class="text-zinc-300 mb-6 flex-1">Exploratory conversations have begun regarding potential collaboration on resilient microgrid research and HOOP integration for naval and expeditionary energy resilience applications.</p>
-        <button onclick="showArticleModal(5)" 
+        <button onclick="showArticleModal(6)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -213,6 +227,141 @@
   <script>
     // News page specific scripts
     const articles = [
+      {
+        date: "AUGUST 4, 2026",
+        category: "TECHNOLOGY",
+        title: "CYBER-NOUGHT: A Resilient, Low-Impact Approach to Microgrids and Data Centers",
+        content: `
+          <p class="text-zinc-400 text-sm mb-6 border-l-2 border-emerald-400 pl-3">By Martin Poveda<br>Containerized Electrical Battery, Cooling & Microgrid | Critical Mineral Free | US made | CRAENERGYDEFENSE.COM</p>
+          <p class="mb-4 text-zinc-300">Climate Risk Analytics (CRA) developed CYBER-NOUGHT to address the escalating energy demands of data centers without inheriting the environmental, supply-chain, and operational liabilities of conventional power systems. Analyzed through a life-cycle assessment (LCA) lens, CYBER-NOUGHT dramatically reduces embodied carbon, resource intensity, and toxicity through three defining characteristics: it is critical-mineral-free, lithium-free, and inverter-free.</p>
+          
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Breaking the Critical Mineral Dependency</h3>
+          <p class="mb-4 text-zinc-300">Traditional lithium-ion storage and inverter-based power conversion rely heavily on cobalt, nickel, graphite, and rare-earth elements. CYBER-NOUGHT sidesteps the environmental and geopolitical costs of these materials:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Lithium-Free & Mineral-Free:</strong> By eliminating critical minerals, the system avoids the upstream mining impacts, refining emissions, and end-of-life toxicity profiles that dominate the LCA of conventional batteries.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Inverter-Free Architecture:</strong> Stripping out complex power electronics reduces overall material intensity. Fewer components mean lower embodied energy, fewer potential failure points, and highly simplified manufacturing and recycling streams.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Domestic, Decentralized Manufacturing</h3>
+          <p class="mb-4 text-zinc-300">CYBER-NOUGHT’s supply chain is designed to reinforce its LCA advantages and protect against global disruptions:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">100% U.S. Sourced:</strong> The system is built entirely with United States materials.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">83% Decentralized Procurement:</strong> The vast majority of materials are obtained through a distributed network of domestic suppliers. This localized approach shortens transportation distances, minimizes logistics-related emissions, and ensures resilience against single-point supply chain failures.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Integrated Performance & Thermal Efficiency</h3>
+          <p class="mb-4 text-zinc-300">Functionally, CYBER-NOUGHT combines microgrid electrical capabilities, energy storage, and HVAC services into a single, cohesive platform.</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Automated Peak-Shaving:</strong> Facilities can actively reduce demand charges and provide grid services without relying on complex, mineral-heavy battery stacks.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">High-Temperature Reliability:</strong> The system is engineered to deliver robust performance in demanding data-center environments operating at 35 °C (95 °F).</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Closed-Loop Heat Recovery:</strong> During colder months, CYBER-NOUGHT can capture waste heat from data-center outlets and use that thermal energy to recharge itself. This interaction between the facility’s cooling load and the storage system’s state of charge maximizes seasonal efficiency and minimizes the need for external winter charging infrastructure.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">The Hidden Cost of "Criminal-Risk" Minerals</h3>
+          <p class="mb-4 text-zinc-300">To understand the value of CYBER-NOUGHT’s architecture, one must examine the baseline it replaces. A conventional 650 kWh NMC811 (nickel-manganese-cobalt) lithium-ion battery system carries a heavy geopolitical and ethical burden. These systems rely on what CRA defines as criminal-risk minerals—resources tied to conflict financing, forced labor, extreme environmental degradation, and single-point supply chain vulnerabilities.</p>
+          
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm text-left text-zinc-300 border border-white/10 rounded-lg">
+              <thead class="text-xs text-white uppercase bg-white/5 border-b border-white/10">
+                <tr>
+                  <th class="px-4 py-3">Mineral</th>
+                  <th class="px-4 py-3">Amount per 650 kWh Li-ion System</th>
+                  <th class="px-4 py-3">Primary Sourcing & Geopolitical Risk</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-white/10">
+                  <td class="px-4 py-3 font-semibold text-white">Lithium</td>
+                  <td class="px-4 py-3">~72 kg</td>
+                  <td class="px-4 py-3">Water-stressed extraction in South America and Australia; ~60–65% refining dominance by China.</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <td class="px-4 py-3 font-semibold text-white">Cobalt</td>
+                  <td class="px-4 py-3">~61 kg</td>
+                  <td class="px-4 py-3">~70–74% sourced from the DRC, heavily linked to child labor, forced labor, and armed-group financing.</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <td class="px-4 py-3 font-semibold text-white">Nickel</td>
+                  <td class="px-4 py-3">~420–490 kg</td>
+                  <td class="px-4 py-3">Deforestation and coastal pollution linked to extraction; high Chinese share of sulfate refining.</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 font-semibold text-white">Graphite</td>
+                  <td class="px-4 py-3">~450–650 kg</td>
+                  <td class="px-4 py-3">~70–80% of natural mining and ~90–97% of battery-grade refining controlled by China, subject to export controls.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mb-6 text-zinc-300">In stark contrast, CYBER-NOUGHT utilizes compressed fluids and thermal energy storage, housing its capabilities entirely within a ruggedized 20-foot maritime shipping container. It requires zero cobalt, zero battery-grade lithium, and zero conflict minerals.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">HOT. COOL. POWER: The Tri-Generation Advantage</h3>
+          <p class="mb-4 text-zinc-300">Rather than relying on electrochemical reactions, the CYBER-NOUGHT platform operates as a Hybrid Optimized Offshore Power (HOOP) system. It is a tri-generation powerhouse capable of simultaneously delivering:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Clean Electricity:</strong> 750 kW of continuous power.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">High-Capacity Cooling:</strong> 250–300 tons of chilled air support.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Thermal Energy:</strong> Hot water output ranging from 50–85 °C.</span>
+            </li>
+          </ul>
+          <p class="mb-6 text-zinc-300">Energy is stored via pressurized air (at 310 bar) and non-flammable thermal fluids, managed by a 12-turbine asymmetric turbomachinery array. This design yields an impressive 75–85% round-trip electrical efficiency and a ≥67% overall tri-generation efficiency. Because the storage mediums are non-toxic and non-flammable, the system entirely eliminates the thermal-runaway and toxic-release risks that plague indoor lithium-ion deployments.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Shipyard-Ready "3.5 Materials"</h3>
+          <p class="mb-4 text-zinc-300">CYBER-NOUGHT's structural integrity is built on what CRA designates as "3.5 Materials"—shipyard-ready alloys and composites designed for extreme durability and localized fabrication. Instead of relying on fragile battery cells, the system's monocoque cage, turbines, and piping utilize:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">2205 Duplex Stainless Steel:</strong> Offering exceptional chloride and stress-corrosion resistance.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">316L Austenitic Stainless:</strong> Known for outstanding general corrosion resistance and weldability.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">17-4 PH Stainless & Type III COPVs:</strong> Used for high-speed impellers and pressure containment, ensuring Leak-Before-Break (LBB) safety margins.</span>
+            </li>
+          </ul>
+          <p class="mb-6 text-zinc-300">These materials support an 80/20 manufacturing philosophy. Up to 80% of the system can be cut, welded, and CNC-machined by local U.S. shipyards, while CRA retains 20% control over critical final processes (like impeller balancing and cyber-encryption).</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Mechanical Stability and Cyber-Resilience</h3>
+          <p class="mb-4 text-zinc-300">By intentionally abandoning power-electronics inverters, the CYBER-NOUGHT platform removes major points of failure, supply-chain bottlenecks, and cyber-attack surfaces. The inverter-free architecture relies instead on direct-coupled alternators, high-efficiency rectifiers, and a 450-millisecond zero-lag supercapacitor UPS. To further protect the system in contested environments, it features an integrated NSA Suite B cyberwarfare enclave and Swarm AI.</p>
+          <p class="mb-6 text-zinc-300">Furthermore, CRA specifically engineered the turbomachinery to operate at lower rotational frequencies. While high-speed stages can reach 45,000 RPM, the deliberate moderation of operational frequency directly reduces centrifugal stress and high-cycle fatigue. This ensures the system meets strict MIL-STD-901E shock and vibration certifications, making it highly survivable against weaponized impacts and contested logistics scenarios where traditional fuel convoys pose a massive casualty risk.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">A 25-Year Strategic Horizon</h3>
+          <p class="mb-4 text-zinc-300">Conventional lithium-ion installations degrade over time, often requiring full pack replacements after 1,000 to 3,000 cycles (roughly 8 to 15 years). CYBER-NOUGHT amortizes its embodied carbon and material footprint over a 25-year service life and 10,000+ cycles.</p>
+          <p class="mb-6 text-zinc-300">For defense operations, critical infrastructure, and hyperscale data centers, this represents a decisive shift. CYBER-NOUGHT proves that energy resilience, high-density cooling, and reliable power do not require compromising on supply chain security, environmental integrity, or human rights.</p>
+        `
+      },
       {
         date: "MAY 26, 2026",
         category: "PRODUCT",
