@@ -82,7 +82,7 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <div class="flex items-center justify-between mb-8">
       <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold">ALL UPDATES • 2026</div>
-      <div class="text-sm text-zinc-400">4 articles shown</div>
+      <div class="text-sm text-zinc-400">5 articles shown</div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
@@ -138,6 +138,20 @@
         <h3 class="text-2xl font-semibold tracking-tight mb-4">HOOP Now Available for Data Center Pilots</h3>
         <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics has opened presale slots for HOOP units specifically targeting hyperscale and edge data center operators seeking immediate tri-generation value.</p>
         <button onclick="showArticleModal(3)" 
+                class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+          Read full update →
+        </button>
+      </article>
+
+      <!-- Article 4 (Founder Profile) -->
+      <article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 text-xs font-medium bg-zinc-400/10 text-zinc-400 rounded-full">PROFILE</span>
+          <span class="text-xs text-zinc-400">AUGUST 11, 2026</span>
+        </div>
+        <h3 class="text-2xl font-semibold tracking-tight mb-4">Martin Poveda &amp; Climate Risk Analytics: The Architecture of Industrial Energy Recovery</h3>
+        <p class="text-zinc-300 mb-6 flex-1">Martin Poveda is the Founder of Climate Risk Analytics, LLC (CRA) and the architect behind its technology platform...</p>
+        <button onclick="showArticleModal(4)" 
                 class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
           Read full update →
         </button>
@@ -444,6 +458,172 @@
         content: `
           <p class="mb-4 text-zinc-300">Climate Risk Analytics has opened presale slots for HOOP units specifically targeting hyperscale and edge data center operators seeking immediate tri-generation value.</p>
           <p class="mb-4 text-zinc-300">Additional technical specifications and pilot program deployment schedules will be released shortly to participating partners.</p>
+        `
+      },
+      
+      // --- INDEX 4 ---
+      {
+        date: "AUGUST 11, 2026",
+        category: "PROFILE",
+        title: "Ai<br><br>“Martin Poveda & Climate Risk Analytics: The Architecture of Industrial Energy Recovery",
+        content: `
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Executive Summary</h3>
+          <p class="mb-4 text-zinc-300">Martin Poveda is the Founder of Climate Risk Analytics, LLC (CRA) and the architect behind its technology platform. Fusing fifteen years of international infrastructure finance (World Bank, Inter-American Development Bank, IFC, Amazon) with high-level academic training in sustainable energy systems (MIT Portugal Program / IST Lisboa) and top-tier AI-accelerated engineering, Poveda built CRA to solve one of global industry’s largest unaddressed inefficiencies: unrecovered high-grade industrial waste heat.</p>
+          <p class="mb-4 text-zinc-300">CRA’s platform converts vented industrial thermal energy into dispatchable, modular power using containerized hybrid-fluid cycles, machine-learning surrogates, and cloud-native AI workflows.</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Act I: Academic Foundation & Industrial Ecology</h3>
+          <p class="mb-4 text-zinc-300">Martin Poveda’s technical foundation was built through the MIT Portugal Program and the Instituto Superior Técnico (IST Lisboa), earning a Master of Science in Sustainable Energy Systems alongside studies at Juniata College (B.A., Political Economy) and MIT (MicroMasters, Supply Chain).</p>
+          <p class="mb-4 text-zinc-300">His approach to energy systems was shaped by pioneering researchers across three key disciplines:</p>
+          
+          <p class="mb-2 text-white font-semibold">1. Renewables Integration & Smart Grids</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Prof. Stephen R. Connors (MIT):</strong> Director of the Analysis Group for Regional Energy Alternatives (AGREA) at MIT and leader of the "Green Islands" project in the Azores. Connors' work on wind/solar integration and grid balancing provided the framework for CRA’s virtual power plant (VPP) and microgrid integration strategies.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Prof. Carlos Silva (IST Lisboa):</strong> Expertise in demand response, microgrid modeling, and decentralized renewable integration, influencing CRA's real-time load-balancing controls.</span>
+            </li>
+          </ul>
+
+          <p class="mb-2 text-white font-semibold">2. Life-Cycle Assessment (LCA) & Industrial Ecology</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Prof. Paulo Ferrão (IST Lisboa):</strong> Co-founder of the MIT Portugal Program. His research in industrial metabolism and waste-to-energy systems defined the quantitative LCA models CRA uses to measure carbon-intensity reduction.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Dr. Randolph Kirchain (MIT Materials Systems Laboratory):</strong> Deep expertise in economic and environmental life-cycle implications of materials and energy flows.</span>
+            </li>
+          </ul>
+
+          <p class="mb-2 text-white font-semibold">3. Sustainable Energy & Thermal Dynamics</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Prof. Eduardo Oliveira Fernandes (University of Porto) & Prof. Vítor Leal (FEUP):</strong> Research in building thermal dynamics and city-level energy modeling, informing CRA’s thermal management architectures.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Act II: The Field Origin — The Waste-Heat Blind Spot</h3>
+          <p class="mb-4 text-zinc-300">Before founding CRA, Poveda managed over $1 billion in international energy investments and loans across emerging markets and heavy industry:</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>World Bank & Inter-American Development Bank (IDB):</strong> Program Manager for a $273 million energy efficiency portfolio across Latin America (Brazil, Mexico, Argentina, El Salvador). Authored policy frameworks on Public-Private Partnerships (PPPs) and ISO 50001 management systems, including a $20 million GCF/IDB facility for SME energy efficiency in El Salvador.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>International Finance Corporation (IFC):</strong> Advised institutional investors on energy infrastructure in Latin America and Southeast Asia, executing cross-border due diligence and risk modeling.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Amazon & Riveron:</strong> Audited global energy transaction data governance, structured Value at Risk (VaR) risk models, and directed SEC climate/risk compliance strategies.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">The Founding Insight</h3>
+          <p class="mb-4 text-zinc-300">During fieldwork in glass manufacturing, cement production, steel processing, and refractory operations, Poveda observed a recurring systemic failure: millions of dollars of high-grade thermal energy were routinely vented directly into the atmosphere.</p>
+          <p class="mb-4 text-zinc-300">Factories were losing massive operational capital through unrecovered stack heat while simultaneously struggling with rising power costs, aging infrastructure, and grid instability. This observation established CRA’s founding mission:</p>
+          <p class="mb-4 text-emerald-400 font-semibold pl-4 border-l-2 border-emerald-400 italic">“Design modular, containerized systems that capture industrial waste heat and convert it into dispatchable energy using hybrid fluids storage and hybrid water/air thermal-recovery cycles—without requiring plant shutdowns or major production-line retrofits.”</p>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Act III: The AI-Driven Engineering Engine</h3>
+          <p class="mb-4 text-zinc-300">To convert complex industrial thermodynamics into physical systems at high velocity, Poveda leveraged a unified software engineering pipeline combining Computational Fluid Dynamics (CFD), Finite Element Analysis (FEA), machine learning surrogates, and agentic AI workflows.</p>
+          
+          <h4 class="text-lg font-bold text-white tracking-tight mt-6 mb-2">Benchmark Capabilities</h4>
+          <p class="mb-4 text-zinc-300">In benchmark evaluations of complex engineering and AI tool utilization (Jan–Feb 2026 data across Gemini & Grok platforms, representing ~10 million active users), Poveda's workflow execution placed in the 99.95th percentile globally (+3.2σ):</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Agentic AI Workflow Mastery (99.95th percentile / +3.29σ):</strong> Operating autonomous AI agents (GCP, Gemini, Grok) that plan, execute, debug, and iterate multi-tool engineering workflows end-to-end—compressing 3-week multi-engineer R&D cycles into single-day turnarounds.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Optimization / Surrogates / ML (99.99th percentile / +3.09σ):</strong> Utilizing PyTorch, Torch, and PuLP optimization pipelines to train machine-learning surrogate models for dynamic system analysis.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Chemical & Process Engineering (99.8th percentile / +2.88σ):</strong> Building full-scale flowsheet simulations integrating chemical kinetics, multi-fluid thermodynamics, and pinch analysis.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Computational Fluid Dynamics (99.7th percentile / +2.75σ):</strong> Running full transient, multiphase, turbulent simulations with mesh independence and AI-accelerated solvers, achieving 40× to 200× speedups over traditional numerical solvers.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Mechanical & Electromechanical FEA (99.5th–99.6th percentile):</strong> Multiphysics coupling of thermal, structural, fluid, and electromagnetic fields for extreme environment equipment.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Act IV: CRA Platform Architecture & DePIN Execution</h3>
+          <p class="mb-4 text-zinc-300">Founded in July 2025, Climate Risk Analytics (CRA) translates this computational acceleration into an integrated hardware-software ecosystem:</p>
+          
+          <pre class="bg-zinc-900 p-4 rounded-lg text-zinc-300 text-xs overflow-x-auto mb-6">
+[ Industrial Thermal Waste ]
+             │
+             ▼
+[ CRA Containerized Capture ]
+             │
+ ┌───────────┼───────────┐
+ ▼           ▼           ▼
+[ Hybrid   [ LPG Thermal [ Hydrogen ]
+ Fluids ]   Carrier ]    Pathway ]
+ └───────────┬───────────┘
+             │
+             ▼
+[ AI-Governed Cyber-Physical Controls ]
+             │
+ ┌───────────┴───────────┐
+ ▼                       ▼
+[ Microgrid / VPP ]   [ On-Chain DePIN Settlement ]
+          </pre>
+
+          <p class="mb-2 text-white font-semibold">2. Intellectual Property & Trade Secrets</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>35 Provisional Patent Filings (U.S. 63/ & 64/ Series):</strong> Establishing early priority across modular, waste-heat tri-generation, and cyber-physical controls.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Proprietary Trade Secrets:</strong> Closed-loop AI evaluation pipelines, mesh generation strategies, and multi-fluid tuning algorithms that cannot be replicated through hardware reverse-engineering alone.</span>
+            </li>
+          </ul>
+
+          <p class="mb-2 text-white font-semibold">3. Hoop Technologies & DePIN Deployment</p>
+          <ul class="space-y-2 mb-6 pl-2">
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>Hoop Technologies:</strong> Advanced power, cooling, and heat-rejection architectures designed for hyperscale data centers and aerospace environments.</span>
+            </li>
+            <li class="flex items-start gap-2 text-zinc-300">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong>DePIN & Web3 Execution:</strong> Integration of physical energy assets into Decentralized Physical Infrastructure Networks (DePIN) on high-throughput blockchains (Solana), deploying AI-governed power purchase agreements (PPAs), automated utility settlement, and programmatic energy asset financing.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Key Overview</h3>
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm text-left text-zinc-300 border border-white/10 rounded-lg">
+              <thead class="text-xs text-white uppercase bg-white/5 border-b border-white/10">
+                <tr>
+                  <th class="px-4 py-3 w-1/3">Pillar</th>
+                  <th class="px-4 py-3 w-2/3">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-white/10"><td class="px-4 py-3 font-semibold">Founder</td><td class="px-4 py-3">Martin Poveda</td></tr>
+                <tr class="border-b border-white/10"><td class="px-4 py-3 font-semibold">Company</td><td class="px-4 py-3">Climate Risk Analytics, LLC (CRA)</td></tr>
+                <tr class="border-b border-white/10"><td class="px-4 py-3 font-semibold">Core Product</td><td class="px-4 py-3">Containerized waste-heat recovery & hybrid-fluid energy storage</td></tr>
+                <tr class="border-b border-white/10"><td class="px-4 py-3 font-semibold">IP Portfolio</td><td class="px-4 py-3">35 U.S. provisional patent applications + closed-loop AI trade secrets</td></tr>
+                <tr class="border-b border-white/10"><td class="px-4 py-3 font-semibold">Target Industries</td><td class="px-4 py-3">Glass, cement, steel, refractories, hyperscale data centers, microgrids</td></tr>
+                <tr class="border-b border-white/10"><td class="px-4 py-3 font-semibold">AI Workflows</td><td class="px-4 py-3">Google Cloud Platform (GCP), Gemini, Grok, PyTorch, AI-accelerated CFD</td></tr>
+                <tr><td class="px-4 py-3 font-semibold">Settlement Layer</td><td class="px-4 py-3">On-chain Web3 / DePIN on Solana for autonomous utility settlement</td></tr>
+              </tbody>
+            </table>
+          </div>
         `
       }
     ];
