@@ -162,7 +162,19 @@
       <p class="text-sm text-zinc-400">For press inquiries or full technical briefings, please <a href="index.html#contact" class="text-emerald-400 hover:underline">contact our team</a>.</p>
     </div>
   </section>
-
+      <!-- Article 5 (CYBER-NOUGHT COMPLIANCE) -->
+<article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+  <div class="flex items-center gap-3 mb-4">
+    <span class="px-3 py-1 text-xs font-medium bg-red-400/10 text-red-400 rounded-full">DEFENSE</span>
+    <span class="text-xs text-zinc-400">AUGUST 12, 2026</span>
+  </div>
+  <h3 class="text-2xl font-semibold tracking-tight mb-4">Cyber-Nought: Regulatory Compliance &amp; Procurement Architecture</h3>
+  <p class="text-zinc-300 mb-6 flex-1">An in-depth look at how the Cyber-Nought procurement model aligns with Buy American Act, DPA, and DoD cybersecurity mandates.</p>
+  <button onclick="showArticleModal(5)" 
+          class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+    Read full update →
+  </button>
+</article>
   <!-- ARTICLE MODAL -->
   <div id="article-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/70 backdrop-blur-md">
     <div onclick="event.target.id === 'article-modal' && hideArticleModal()" class="absolute inset-0"></div>
@@ -640,7 +652,25 @@
             </table>
           </div>
         `
-      }
+      } ,// --- INDEX 5 ---
+{
+  date: "AUGUST 12, 2026",
+  category: "DEFENSE",
+  title: "Cyber-Nought: Regulatory Compliance & Procurement Architecture",
+  content: `
+    <h3 class="text-xl font-bold text-white tracking-tight mb-3">Buy American Act & Executive Order 14005 Compliance</h3>
+    <p class="mb-4 text-zinc-300">The Cyber-Nought procurement model establishes comprehensive operational alignment with the Buy American Act (41 U.S.C. §§ 8301–8305) and Executive Order 14005, by embedding a domestic-first sourcing paradigm into its foundational hardware architecture. Exceeding current Federal Acquisition Regulation (FAR) Part 25 domestic content thresholds, the platform mandates that at least 80% of all structural, mechanical, and electronic bill-of-materials (BOM) components originate from validated United States sources.</p>
+
+    <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Executive Order 14017 & Defense Production Act (DPA) Alignment</h3>
+    <p class="mb-4 text-zinc-300">To address the operational vulnerabilities exposed in global industrial pipelines, the Cyber-Nought hardware architecture directly fulfills the mandates of Executive Order 14017, America’s Supply Chains, and leverages the strategic intent of the Defense Production Act (DPA) Title III to build a resilient, redundant industrial pipeline. By deliberately selecting standardized, non-developmental items (NDIs) and open-market commercial components, the architecture eliminates single-source foreign dependencies.</p>
+
+    <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Executive Order 14057 & DoD Operational Energy Strategy</h3>
+    <p class="mb-4 text-zinc-300">The hardware architecture of Cyber-Nought responds directly to Executive Order 14057, Catalyzing Clean Energy Industries and Jobs Through Federal Sustainability. Cyber-Nought achieves these goals through its proprietary Tri-Generation Heat, Power, and Operational Output (HOOP) capability. By capturing high-grade waste heat from primary power generation and redirecting it into thermal absorption cooling, space conditioning, and process heat subsystems, the platform achieves unprecedented total fuel utilization efficiency.</p>
+
+    <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">NDAA Procurement Reform, CMMC 2.0, & DFARS Compliance</h3>
+    <p class="mb-4 text-zinc-300">Cyber-Nought’s software, cybersecurity, and administrative procurement architecture incorporates modern National Defense Authorization Act (NDAA) procurement reforms, strict Defense Federal Acquisition Regulation Supplement (DFARS) clauses, and the Cybersecurity Maturity Model Certification (CMMC 2.0) framework. By committing supply chain transactions, component certifications, and delivery milestones to an immutable, decentralized ledger (Solana Anchor), the platform establishes a tamper-evident audit trail designed for seamless compliance with DCAA standards.</p>
+  `
+}
     ];
 
     function showArticleModal(index) {
