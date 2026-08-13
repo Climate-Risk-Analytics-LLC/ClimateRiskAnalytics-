@@ -81,7 +81,7 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <div class="flex items-center justify-between mb-8">
       <div class="uppercase text-xs tracking-[3px] text-emerald-400 font-semibold">ALL UPDATES • 2026</div>
-      <div class="text-sm text-zinc-400">5 articles shown</div>
+      <div class="text-sm text-zinc-400">7 articles shown</div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
@@ -171,6 +171,19 @@
   <h3 class="text-2xl font-semibold tracking-tight mb-4">Cyber-Nought: Regulatory Compliance &amp; Procurement Architecture</h3>
   <p class="text-zinc-300 mb-6 flex-1">An in-depth look at how the Cyber-Nought procurement model aligns with Buy American Act, DPA, and DoD cybersecurity mandates.</p>
   <button onclick="showArticleModal(5)" 
+          class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
+    Read full update →
+  </button>
+</article>
+  <!-- Article 6 (MARITIME DEFENSE / NEST TURRET) -->
+<article class="news-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+  <div class="flex items-center gap-3 mb-4">
+    <span class="px-3 py-1 text-xs font-medium bg-red-400/10 text-red-400 rounded-full">DEFENSE</span>
+    <span class="text-xs text-zinc-400">AUGUST 13, 2026</span>
+  </div>
+  <h3 class="text-2xl font-semibold tracking-tight mb-4">Active Maritime Defense: CRA Files Provisional Patent for High-Velocity Kinetic Anti-Drone System</h3>
+  <p class="text-zinc-300 mb-6 flex-1">Climate Risk Analytics expands into active maritime defense with the NEST Turret—a high-velocity pneumatic kinetic point defense module engineered for naval vessels to counter saturation UAV swarms at under $1.00 per target.</p>
+  <button onclick="showArticleModal(6)" 
           class="mt-auto self-start text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1">
     Read full update →
   </button>
@@ -671,7 +684,46 @@
     <p class="mb-4 text-zinc-300">Cyber-Nought’s software, cybersecurity, and administrative procurement architecture incorporates modern National Defense Authorization Act (NDAA) procurement reforms, strict Defense Federal Acquisition Regulation Supplement (DFARS) clauses, and the Cybersecurity Maturity Model Certification (CMMC 2.0) framework. By committing supply chain transactions, component certifications, and delivery milestones to an immutable, decentralized ledger (Solana Anchor), the platform establishes a tamper-evident audit trail designed for seamless compliance with DCAA standards.</p>
   `
 }
-    ];
+    ]; // --- INDEX 6 ---
+{
+  date: "AUGUST 13, 2026",
+  category: "DEFENSE",
+  title: "Active Maritime Defense: CRA Files Provisional Patent for High-Velocity Kinetic Anti-Drone System",
+  content: `
+    <p class="mb-4 text-zinc-300">Climate Risk Analytics has officially expanded its tech portfolio into active maritime defense, filing a provisional patent for a high-velocity kinetic anti-drone system tailored for naval vessels. Built to protect surface fleets against saturation UAV swarm attacks, the company's cyber-nought flagship integration introduces a radical shift in point defense economics: replacing multi-million-dollar missile interceptors with ultra-low-cost kinetic neutralization.</p>
+
+    <p class="mb-4 text-zinc-300">At the heart of this patent is the <strong>NEST Turret</strong>, a dedicated Kinetic Point Defense module engineered specifically for naval shipboard installations.</p>
+
+    <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">NEST Turret Capabilities & Specifications</h3>
+    <ul class="space-y-2 mb-6 pl-2">
+      <li class="flex items-start gap-2 text-zinc-300">
+        <span class="text-emerald-400 font-bold">•</span>
+        <span><strong class="text-white">Engagement Mechanism:</strong> High-density pneumatic kinetic stream projection</span>
+      </li>
+      <li class="flex items-start gap-2 text-zinc-300">
+        <span class="text-emerald-400 font-bold">•</span>
+        <span><strong class="text-white">Muzzle Velocity:</strong> 1,400 m/s</span>
+      </li>
+      <li class="flex items-start gap-2 text-zinc-300">
+        <span class="text-emerald-400 font-bold">•</span>
+        <span><strong class="text-white">Rate of Fire:</strong> 2,400 rounds per minute (RPM)</span>
+      </li>
+      <li class="flex items-start gap-2 text-zinc-300">
+        <span class="text-emerald-400 font-bold">•</span>
+        <span><strong class="text-white">Targeting Objective:</strong> Rapid structural disintegration of coordinated UAV swarms</span>
+      </li>
+      <li class="flex items-start gap-2 text-zinc-300">
+        <span class="text-emerald-400 font-bold">•</span>
+        <span><strong class="text-white">Engagement Cost:</strong> Under $1.00 per target (pennies per drone kill)</span>
+      </li>
+    </ul>
+
+    <h3 class="text-xl font-bold text-white tracking-tight mt-8 mb-3">Solving Point-Defense Cost Asymmetry</h3>
+    <p class="mb-4 text-zinc-300">Traditional close-in weapon systems (CIWS) and ship-launched interceptor missiles face severe operational bottlenecks when confronted by low-cost, massed drone swarms. Defensive missiles costing hundreds of thousands of dollars per engagement quickly exhaust shipboard magazines, creating an unsustainable cost-asymmetry.</p>
+
+    <p class="mb-4 text-zinc-300">Integrated directly into Climate Risk Analytics' cyber-nought combat command suite, the platform pairs predictive threat modeling with zero-latency automated fire control. This unified approach bridges environmental monitoring with hard-kill physical defense, ensuring continuous fleet resilience against asymmetric aerial warfare.</p>
+  `
+}
 
     function showArticleModal(index) {
       const modal = document.getElementById('article-modal');
